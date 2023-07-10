@@ -80,6 +80,7 @@ export const DmTarget = new Juke.Target({
     'html/**',
     'icons/**',
     'interface/**',
+    'modular_calligraphy/**',
     `${DME_NAME}.dme`,
     NamedVersionFile,
   ],
