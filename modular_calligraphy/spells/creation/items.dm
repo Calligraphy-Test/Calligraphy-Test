@@ -41,6 +41,12 @@
 	kanji = "鍵"
 	creation = /obj/item/key/atv // other /obj/item/key types are secway and janitor but I dont think those should be spawned
 
+/datum/kanji_spell/creation/bag
+	name = "Summon bag"
+	desc = "Summons a small bag."
+	kanji = "袋"
+	creation = /obj/item/storage/bag/trash
+
 ////////////
 //  FOOD  //
 ////////////
@@ -101,6 +107,14 @@
 	charges = 6
 	creation = list(/obj/item/food/grown/wheat, /obj/item/food/grown/oat)
 
+/datum/kanji_spell/creation/potato
+	name = "Summon potato"
+	desc = "Summons a potato or sweet potato."
+	kanji = "芋"
+	charges = 6
+	creation = list(/obj/item/food/grown/potato, /obj/item/food/grown/potato/sweet)
+	// could be used for tuber but 芋 isnt used for the following: /obj/item/food/grown/carrot, /obj/item/food/grown/parsnip, /obj/item/food/grown/whitebeet, /obj/item/food/grown/redbeet
+
 /datum/kanji_spell/creation/flower
 	name = "Summon flower"
 	desc = "Summons a flower. It smells magical."
@@ -145,6 +159,12 @@
 	desc = "Summons a simple pair of shoes."
 	kanji = "靴"
 	creation = /obj/item/clothing/shoes/sneakers
+
+/datum/kanji_spell/creation/satchel
+	name = "Summon satchel"
+	desc = "Summons a backpack, satchel, or duffelbag."
+	kanji = "鞄"
+	creation = list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel, /obj/item/storage/backpack/satchel/leather, /obj/item/storage/backpack/duffelbag)
 
 /////////////////
 //  MATERIALS  //
